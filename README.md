@@ -15,7 +15,7 @@ To run this script, you will need:
 Follow these steps to set up the script:
 
 1. **Install the required package**:
-   Install the OpenAI Python package:
+   Install the OpenAI Python package
 
 2. **API Key**:
    - Obtain an API key
