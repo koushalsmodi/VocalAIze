@@ -1,7 +1,8 @@
 import os
 from llm import LLM
 from tts import TextToSpeech
-
+from stt import SpeechToText
+from pathlib import Path
 
 def main():
     # Fetch the API key from an environment variable
@@ -23,6 +24,8 @@ def main():
     tts.text_to_speech(generated_text)
 
     # TODO: Speech to text.
+    stt = SpeechToText(api_key)
+    print(stt.speech_to_text(Path("./speech.mp3")))
 
     print("Speech has been generated, played, and saved.")
 
