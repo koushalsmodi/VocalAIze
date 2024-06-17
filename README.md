@@ -1,32 +1,49 @@
 # Speech to Text Conversion Tool
 
-This Python script utilizes the OpenAI API to convert speech from an audio file into text.
+This Python script leverages the OpenAI API to convert spoken language from an audio file into written text. It's designed to be easy to use and integrate into any project that requires speech transcription.
 
 ## Requirements
 
+To run this script, you will need:
+
 - Python 3.6 or higher
 - `openai` Python package
-- An API key from OpenAI
+- An API key from OpenAI: You will need to obtain a key to authenticate your requests.
+
+## Setup
+
+Follow these steps to set up the script:
+
+1. **Install the required package**:
+   Run the following command to install the OpenAI Python package:
 
 ## Setup
 
 1. **Install the required package**:
 
 2. **API Key**:
-   - Obtain an API key from OpenAI.
-   - Set the API key in your environment variables.
+   - Obtain an API key
+   - Set the API key in your environment variables for secure access
      
 ## Usage
 
 To use the script, simply run it with Python. Ensure you have an audio file named `speech.mp3` in the same directory as the script, or modify the path in the script to point to your audio file.
 
-The script will print the transcription of the audio file to the console.
+- The script will automatically transcribe the audio and print the transcription to the console.
 
 ## How It Works
 
-- The script initializes a `SpeechToText` object with your OpenAI API key.
-- It reads an audio file and sends it to OpenAI's speech-to-text service.
-- The transcription is received and printed out.
+The script operates by performing the following steps:
+
+- Initializes a `SpeechToText` object using your OpenAI API key.
+- Reads the specified audio file (`speech.mp3` by default).
+- Sends the audio data to OpenAI's speech-to-text service.
+- Receives the transcription and outputs it to the console.
+
+## Notes
+
+- The default model used for transcription is `medium.en`. You can change this setting in the `speech_to_text` method within the `stt.py` file to any other model supported by OpenAI.
+- The script currently supports MP3 audio format. If your audio file is in a different format, you will need to convert it to MP3 or modify the script to handle other formats.
 
 ## Notes
 
