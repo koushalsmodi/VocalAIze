@@ -20,7 +20,7 @@ Follow these steps to set up the script:
 2. **API Key**:
    - Obtain an API key
    - Set the API key in your environment variables for secure access
-   
+
 ## How It Works
 
 ### Text to Speech
@@ -85,6 +85,9 @@ The script operates by performing the following steps:
 3. **Place an audio file named `speech.mp3`** in the same directory as the script. If your file is named differently or located elsewhere, modify the file path in the script accordingly.
 
 4. **Run the speech-to-text script**:    python3 stt.py
+
+5. **Run the main script**:    python3 main.py
+
 ## Notes
 
 - The default model used for transcription is `medium.en`. You can change this setting in the `speech_to_text` method within the `stt.py` file to any other model supported by OpenAI.
