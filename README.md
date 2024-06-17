@@ -36,7 +36,7 @@ To use the text-to-speech functionality, follow these instructions:
 To use the speech-to-text functionality, follow these instructions:
 
 - Place an audio file named `speech.mp3` in the same directory as the script. If your file is named differently or located elsewhere, modify the file path in the script accordingly.
-- Run the script using Python: 'python3 stt.py
+- Run the script using Python: 'python3 stt.py'
 
 - The script will automatically transcribe the audio and print the transcription to the console.
 
