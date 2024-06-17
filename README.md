@@ -28,6 +28,7 @@ Follow these steps to set up the script:
 To use the text-to-speech functionality, follow these instructions:
 
 - Create a text file named `text.txt` in the same directory as the script, containing the text you want to convert to speech.
+- Run the script using Python: python3 tts.py
 - The script will generate an audio file (e.g., `output.mp3`) with the spoken version of the text.
 
 ### Speech to Text
@@ -35,6 +36,8 @@ To use the text-to-speech functionality, follow these instructions:
 To use the speech-to-text functionality, follow these instructions:
 
 - Place an audio file named `speech.mp3` in the same directory as the script. If your file is named differently or located elsewhere, modify the file path in the script accordingly.
+- Run the script using Python: python3 stt.py
+
 - The script will automatically transcribe the audio and print the transcription to the console.
 
 ## How It Works
