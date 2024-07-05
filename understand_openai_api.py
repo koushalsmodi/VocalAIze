@@ -4,7 +4,7 @@ from tts import TextToSpeech
 from stt import SpeechToText
 from pathlib import Path
 
-api_key="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"
+# api_key
 
 client = OpenAI(api_key=api_key)
 
@@ -34,7 +34,7 @@ if __name__ == '__main__':
 
     while True:
         audio_path = "my_speech.wav"
-        stt.record_audio(audio_path, duration=10)
+        stt.record_audio(audio_path, duration=7)
 
         user_input: str = stt.speech_to_text(audio_path)
 
@@ -52,3 +52,4 @@ if __name__ == '__main__':
 
         messages.append({"role": "assistant", "content": response})
         tts.text_to_speech(response)
+
