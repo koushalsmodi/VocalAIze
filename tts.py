@@ -15,6 +15,8 @@ class TextToSpeech:
         )
         response.stream_to_file(self.speech_file_path)
 
+        
+
 
 if __name__ == "__main__":
     api_key = os.getenv('OPENAI_API_KEY')
