@@ -5,7 +5,7 @@ from tts import TextToSpeech
 from stt import SpeechToText
 from pathlib import Path
 
-api_key="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"
+#api-key
 
 client = OpenAI(api_key=api_key)
 
