@@ -1,6 +1,10 @@
 from pathlib import Path
 import os
 from openai import OpenAI
+from pydub import AudioSegment
+from pydub.playback import play
+import sys
+sys.path.append('/usr/bin/ffmpeg')
 
 class TextToSpeech:
     def __init__(self, api_key: str):
@@ -14,6 +18,8 @@ class TextToSpeech:
             input=text
         )
         response.stream_to_file(self.speech_file_path)
+        sound = AudioSegment.from_file(self.speech_file_path)
+        play(sound)
 
         
 

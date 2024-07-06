@@ -1,11 +1,10 @@
-
 import os 
 from openai import OpenAI
 from tts import TextToSpeech
 from stt import SpeechToText
 from pathlib import Path
 
-#api-key
+# api_key
 
 client = OpenAI(api_key=api_key)
 
@@ -53,3 +52,4 @@ if __name__ == '__main__':
 
         messages.append({"role": "assistant", "content": response})
         tts.text_to_speech(response)
+
